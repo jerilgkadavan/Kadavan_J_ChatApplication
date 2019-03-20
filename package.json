@@ -4,9 +4,9 @@
   "description": "social media app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app"
   },
-  "author": "",
+  "author": "Kadavan Jeril",
   "license": "ISC",
   "devDependencies": {
     "express": "^4.16.4"
