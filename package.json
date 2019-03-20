@@ -1,17 +1,15 @@
 {
-  "name": "kadavan_j_chatapp",
+  "name": "kadavan_Jeril",
   "version": "1.0.0",
-  "description": "social media app",
+  "description": "chatapp",
   "main": "app.js",
   "scripts": {
     "start": "node app"
   },
-  "author": "Kadavan Jeril",
+  "author": "jeril kadavan",
   "license": "ISC",
-  "devDependencies": {
-    "express": "^4.16.4"
-  },
   "dependencies": {
+    "express": "^4.16.4",
     "socket.io": "^2.2.0"
   }
 }
