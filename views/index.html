@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Kadavan Jeril Chat App</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+  <script src="https://unpkg.com/vue"></script>
 </head>
-<body>
-    <h1>Testing Chat app
-    </h1>
+
+<body data-palette='0'>
+  <main id="app">
+
+    
+    <section class="form-container">
+      
+      <label for="nickname"></label>
+      <input v-model='nickname' type="text" id="nickname" class="nickname" placeholder="Your Name">
+
+      <form>
+        <label for="message"></label>
+        <textarea v-model='message' class="message" type="text" autocomplete="off"  placeholder="Message" id="textarea"></textarea>
+        <input id='button' type="submit" @click.prevent='dispatchMessage'>
+      </form>
+      <!-- STYLE BELOW PARAGRAPH -->
+      <p id="usersConnect">Number Of Users Connected: {{users}}</p>
+    </section>
+    
+
+    <section class="messages">
+      <ul id="messages" v-for="message in messages">
+				<newmessage :msg='message'></newmessage>
+			</ul>
+		</section>		
+	</main>
+  <script src="/socket.io/socket.io.js"> 
+  </script> <script type="module" src="js/main_vm.js">
+  </script>
 </body>
+
 </html>

@@ -1,0 +1,31 @@
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: linear-gradient(to bottom right, #66ffff 0%, #ccffff 100%);
+ background-image: url('../images/chatapp.png');
+  //background-color: #663399;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  flex-direction: column-reverse;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Helper Rules */
+.hidden {
+  display: none;
+}
+

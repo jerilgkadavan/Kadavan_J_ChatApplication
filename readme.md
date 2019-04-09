@@ -1,0 +1,1 @@
+- https://stackoverflow.com/questions/10599148/how-do-i-get-the-current-time-only-in-javascript
