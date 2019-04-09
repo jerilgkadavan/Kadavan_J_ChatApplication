@@ -10,12 +10,24 @@ body {
   // background: linear-gradient(to bottom right, #66ffff 0%, #ccffff 100%);
  background-image: url('../images/chatapp.png');
   //background-color: #663399;
+  @media only screen and (max-width: 600px) {
+    
+     width: 100%;
+  
+  }
 }
 
 main {
   display: flex;
   height: 100%;
   flex-direction: column-reverse;
+
+  @media only screen and (max-width: 600px) {
+    
+     flex-direction: column-reverse;
+     justify-content: center
+
+}
 }
 
 * {

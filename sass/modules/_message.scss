@@ -9,6 +9,11 @@
     color: white;
     float:right;
     clear: both;
+    @media only screen and (max-width: 600px) {
+    
+        float:left;
+     
+     }
 }
 
 .my-message {
