@@ -24,6 +24,10 @@
 #usersConnect{
     color:rgb(0, 179, 0);
     font-size: 18px;
-
     text-align: center;
+    @media only screen and (max-width: 600px) {
+    
+       background-color: white;
+     
+     }
 }
